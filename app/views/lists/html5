@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+
+	<head></head>
+	
+	<body>
+		
+		<h1>To Do List</h1>
+		
+		<% @lists.each do |list|%>
+		
+			<h2><%= list.name %><h2>
+			
+			<h3><%= list.description %><h3>
+				
+			<p><%= list.notes %></p>	
+		
+		<% end%>
+		
+	</body>
+
+</html>
